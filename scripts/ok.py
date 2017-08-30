@@ -3,7 +3,7 @@ import pygame
 pygame.init()
 display_width=800
 display_height=600
-carImg= pygame.image.load('racecar.png')
+carImg= pygame.image.load('../resources/racecar.png')
 white=(255,255,255)
 black = (0,0,0)
 x=display_width*0.45
@@ -47,6 +47,6 @@ while not crashed:
     gameDisplay.fill(white)
     car(x,y)
     pygame.display.update()
-    clock.tick(60)
+    clock.tick(30)
 
 pygame.quit()
